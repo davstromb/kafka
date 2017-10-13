@@ -1,8 +1,17 @@
 # Kafka tutorial
 
+
+1. [Setup project](#setup)
+2. [Kafka Installation Instructions for Ubuntu 16.04 LTS](#install)
+3. [Command line Exercises](#CommandExercises)
+4. [Java Exercises](#JavaExercises)
+
+
+<a name="setup"></a>
 ## Setup project
 `$ mvn clean install`
 
+<a name="install"></a>
 ## Kafka Installation Instructions for Ubuntu 16.04 LTS
 
 ### Installation
@@ -50,3 +59,9 @@ This is my first message
 This is another message 
 ```
  
+ <a name="CommandExercises"></a>
+## Command Line Exercises
+ 
+ 
+  <a name="CommandExercises"></a>
+## Java Exercises

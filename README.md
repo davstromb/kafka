@@ -61,7 +61,27 @@ This is another message
  
  <a name="CommandExercises"></a>
 ## Command Line Exercises
+
+### Verify that Kafka is running correctly
+There are various ways to verify that all of the Kafka system’s daemons are running. It is important to verify that Kafka is functioning correctly before you start to use it. You may need to restart a daemon process during the class, if it has terminated for some reason.
+
+```bash
+$ sudo jps
+2183 Jps1752 SupportedKafka 
+1832 SchemaRegistryMain 
+1775 KafkaRestMain 
+1487 QuorumPeerMain
+```
+The four Kafka-related processes you should see, and their Linux service names, are:
+
+| Java Process Name        | Service Name           | 
+| ------------- |:-------------:| 
+| QuorumPeerMain      | zookeeper | 
+| SupportedKafka      | kafka-server      |  
+| KafkaRestMain | kafka-rest     |   
+| SchemaRegistryMain | schema-registry |
  
+If any of the four Java processes are not present, start the relevant service(s) by typing: `$ sudo service <service-name> start` 
  
-  <a name="CommandExercises"></a>
+  <a name="JavaExercises"></a>
 ## Java Exercises
